@@ -1,0 +1,83 @@
+
+.todo-item {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 5px;
+border: 1px solid #eee;
+border-radius: 50px;
+box-shadow:2px 2px;
+margin-bottom: 10px;
+background-color: #f9f9f9;
+}
+.todo-itemm input[type="checkbox"] {
+transform: scale(1.2);
+}
+.todo-item span {
+flex: 1;
+font-size: 16px;
+}
+.todo-item span.completed {
+text-decoration: line-through;
+color: #7f8c8d;
+}
+.delete-btn {
+padding: 10px 20px;
+background-color: #e74c3c;
+color: #f9f9f9;
+font-size: 16px;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+}
+.delete-btn:hover {background-color: #c0392b;
+}
+.todo-stats {
+text-align: center;
+margin-top: 20px;
+font-weight: bold;
+color: #f9f9f9;
+}
+.no-todos {
+text-align: center;
+color: #f9f9f9;
+font-style: italic;
+margin: 40px 0;
+}
+
+.edit-btn{
+padding: 10px 20px;
+background-color: #008716;
+color: #f9f9f9;
+font-size: 16px;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+}
+.priority-label {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.75rem;
+  margin-left: 10px;
+  min-width: 80px;
+  text-align: center;
+}
+.save-btn{
+padding: 10px 20px;
+background-color: #006682;
+color: #f9f9f9;
+font-size: 16px;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+}
+.cancel-btn{
+padding: 10px 20px;
+background-color: #464847;
+color: #f9f9f9;
+font-size: 16px;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+}

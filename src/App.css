@@ -1,0 +1,270 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+.App-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.App-header h1 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+
+/* ================================
+   ADD TODO FORM
+================================ */
+.add-todo-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.todo-input,
+.priority-select,
+.category-input,
+.tags-input,
+.due-date-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+}
+
+
+.todo-input:focus,
+.priority-select:focus,
+.category-input:focus,
+.tags-input:focus,
+.due-date-input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+
+.add-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.add-btn:hover {
+  background: #222;
+}
+
+
+/* ================================
+   TODO LIST
+================================ */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.todo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fdfdfd;
+  transition: background-color 0.3s ease;
+}
+
+
+.todo-item:hover {
+  background: #f4f4f4;
+}
+
+
+.todo-item input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #000;
+}
+
+
+.todo-details {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.todo-details span.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+
+/* ================================
+   PRIORITY STYLES
+================================ */
+.todo-item.high { border-left: 5px solid #ff4d4d; }
+.todo-item.medium { border-left: 5px solid #ffcc00; }
+.todo-item.low { border-left: 5px solid #4caf50; }
+
+
+.priority-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+
+.priority-label.high { background: #ff4d4d; color: #fff; }
+.priority-label.medium { background: #ffcc00; color: #000; }
+.priority-label.low { background: #4caf50; color: #fff; }
+
+
+/* ================================
+   CATEGORY & TAGS
+================================ */
+.category-label {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #ddd;
+}
+
+
+.tags-label {
+  display: flex;
+  gap: 4px;
+}
+
+
+.tag {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #e0e0e0;
+}
+
+
+/* ================================
+   DUE DATE
+================================ */
+.due-date-label {
+  font-size: 0.8rem;
+  color: #555;
+  margin-left: auto;
+}
+
+
+/* ================================
+   ACTION BUTTONS (Elegant Black & White)
+================================ */
+.todo-actions {
+  display: flex;
+  gap: 5px;
+}
+
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* EDIT BUTTON - White with black text */
+.edit-btn {
+  border: 2px solid #000;
+  color: #000;
+  background: #fff;
+}
+.edit-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+/* DELETE BUTTON - Black with white text */
+.delete-btn {
+  border: 2px solid #000;
+  color: #fff;
+  background: #000;
+}
+.delete-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+/* ================================
+   STATS & EMPTY STATE
+================================ */
+.todo-stats {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+
+.no-todos {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+
+/* ================================
+   SEARCH & FILTER
+================================ */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.filter-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
